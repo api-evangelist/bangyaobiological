@@ -1,0 +1,16 @@
+generated: '2026-09-27'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.bangyaobio.com
+  https: true
+  tls_cert_error: '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch,
+    certificate is not valid for ''www.bangyao'
+  hsts: null
+domains:
+- domain: bangyaobio.com
+  dnssec: false
+  caa:
+  - bangyao6689.websitecname.cn.
+  spf: false
+  dmarc: false
